@@ -1,3 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>Hello world</template>
+<template>
+  <router-view></router-view>
+</template>

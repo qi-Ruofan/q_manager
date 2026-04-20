@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1>QManager</h1>
-    <router-view></router-view>
-  </div>
+  <div>login</div>
 </template>
 
 <script lang="ts" setup></script>
