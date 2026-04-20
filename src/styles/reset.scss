@@ -1,0 +1,90 @@
+/* ========== 基础重置 ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== 字体与文本 ========== */
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f7fa; // 后台常见灰背景
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== 标题重置 ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* ========== 列表重置 ========== */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ========== a 标签 ========== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== 图片 ========== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== 表单元素 ========== */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+/* ========== 按钮 ========== */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ========== 表格 ========== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ========== 滚动条（可选） ========== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
