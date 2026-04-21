@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^4.2.6",
+    "pinia": "^3.0.4",
     "sass": "^1.99.0",
     "vue": "^3.5.32",
     "vue-router": "^4.6.4"
@@ -21,6 +22,8 @@
     "@vitejs/plugin-vue": "^6.0.6",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/tsconfig": "^0.9.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^10.2.1",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.5.0",
