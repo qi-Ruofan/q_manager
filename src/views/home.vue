@@ -6,10 +6,21 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted } from 'vue'
 import { useUserStore } from '@/store/user'
+import { getUserInfo } from '@/api/userApi'
+
+onMounted(() => {
+  getUser()
+})
 const userStore = useUserStore()
 const setToken = () => {
   userStore.access_token = 'abc'
+}
+const getUser = () => {
+  getUserInfo().then((res) => {
+    console.log(res)
+  })
 }
 </script>
 
