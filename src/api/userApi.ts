@@ -1,8 +1,17 @@
 import request from '@/utils/http'
 
-export function getUserInfo() {
+interface userInfoType {
+  username: string
+  password: string
+}
+
+export function getUserInfo(data: userInfoType) {
   return request({
     url: '/user/info',
-    method: 'get'
+    data: {
+      username: data.username,
+      password: data.password
+    },
+    method: 'post'
   })
 }
