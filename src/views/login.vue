@@ -45,6 +45,7 @@
 </template>
 
 <script lang="ts" setup>
+import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { getUserInfo } from '@/api/userApi'
 import { setToken, setRefreshToken } from '@/utils/auth'
@@ -60,6 +61,12 @@ interface UserResponse {
   refresh_token: string
   access_token: string
 }
+
+const formState = reactive<FormState>({
+  username: '',
+  password: '',
+  remember: true
+})
 
 const onFinish = (values: FormState) => {
   const params = {
